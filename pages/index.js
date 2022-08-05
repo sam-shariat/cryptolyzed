@@ -18,25 +18,25 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <Link href="/ethereum" className={styles.card}>
+          <a href="/ethereum" className={styles.card}>
             <h2>Ethereum &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
-          </Link>
+          </a>
 
-          <Link href="/polygon" className={styles.card}>
+          <a href="/polygon" className={styles.card}>
             <h2>Polygon &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="/algorand"
             className={styles.card}
           >
             <h2>Algorand &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="/Solana"
             className={styles.card}
           >
@@ -44,7 +44,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </Link>
+          </a>
         </div>
       </main>
 
