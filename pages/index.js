@@ -37,7 +37,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="Solana"
+            href="/Solana"
             className={styles.card}
           >
             <h2>Solana &rarr;</h2>
