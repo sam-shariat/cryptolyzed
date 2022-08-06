@@ -7,7 +7,7 @@ import { Flipside, Query, QueryResultSet } from "@flipsidecrypto/sdk";
 
 
 
-export default function Overview() {
+export default async function Overview() {
 
     const flipside = new Flipside(
         "d0709327-3a14-45e6-99cc-e1e381800d62",
