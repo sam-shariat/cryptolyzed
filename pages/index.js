@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Crypto <Link href="/overview">Analytics!</Link>
         </h1>
-
+        <div className={styles.spaceh} ></div>
         <div className={styles.grid}>
           <a href="/ethereum" className={styles.card}>
             <h2>Ethereum &rarr;</h2>
