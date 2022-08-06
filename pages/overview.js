@@ -223,7 +223,7 @@ export default function Overview() {
       
       // Send the `Query` to Flipside's query engine and await the results
       
-      const fetchMyAPI = useCallback(async () => {
+      const fetchMyAPI = (async () => {
         let response = await flipside.query.run(query);
         response.records.map((record) => {
             console.log('data is here');
