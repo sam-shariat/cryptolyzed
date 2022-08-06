@@ -2,18 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Overview.module.css'
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 import { Flipside, Query, QueryResultSet } from "@flipsidecrypto/sdk";
 
 
 
-export default async function Overview() {
+export default function Overview() {
 
     const flipside = new Flipside(
         "d0709327-3a14-45e6-99cc-e1e381800d62",
         "https://node-api.flipsidecrypto.com"
       );
-    const [data, setData] = useState();
+    const [data, setData] = useState(null)
+    const [isLoading, setLoading] = useState(false)
     const query = {
         sql: `SELECT 
         avg(polygon.blocks) AS polygon_blocks_per_day,
@@ -221,14 +222,33 @@ export default async function Overview() {
       };
       
       // Send the `Query` to Flipside's query engine and await the results
-      const result = await flipside.query.run(query);
       
-      // Iterate over the results
-      result.records.map((record) => {
-        console.log('data is here');
-        console.log(record);
-        setData(record);
-      });
+      const fetchMyAPI = useCallback(async () => {
+        let response = await flipside.query.run(query);
+        response.records.map((record) => {
+            console.log('data is here');
+            console.log(record);
+            setData(record);
+            setLoading(false)
+          });
+      }, [])
+    
+      useEffect(() => {
+        setLoading(true)
+        fetchMyAPI()
+      }, [fetchMyAPI])
+
+
+      /*useEffect(() => {
+        setLoading(true)
+        const result = await flipside.query.run(query);
+        // Iterate over the results
+        result.records.map((record) => {
+            console.log('data is here');
+            console.log(record);
+            setData(record);
+        });
+      }, [])*/
 
   return (
     <div className={styles.container}>
