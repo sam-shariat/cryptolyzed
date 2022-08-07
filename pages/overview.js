@@ -241,16 +241,20 @@ export default function Overview() {
       */
 
       useEffect(() => {
-        setLoading(true)
-        const result = await flipside.query.run(query);
-        // Iterate over the results
-        result.records.map((record) => {
+        const getData = async () => {
+            setLoading(true)
+            const result = await flipside.query.run(query);
             console.log('data is here');
-            console.log(record);
-            setData(record);
-            setLoading(false);
-        });
-      }, [])
+            setData(result);
+            setLoading(false)
+        };
+      
+        getData(); // run it, run it
+      
+        return () => {
+          // this now gets called when the component unmounts
+        };
+      }, []);
 
   return (
     <div className={styles.container}>
