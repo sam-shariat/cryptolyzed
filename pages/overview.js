@@ -223,7 +223,7 @@ export default function Overview() {
       
       // Send the `Query` to Flipside's query engine and await the results
       
-      const fetchMyAPI = (async () => {
+      /*const fetchMyAPI = (async () => {
         let response = await flipside.query.run(query);
         response.records.map((record) => {
             console.log('data is here');
@@ -238,8 +238,9 @@ export default function Overview() {
         fetchMyAPI()
       }, [fetchMyAPI])
 
+      */
 
-      /*useEffect(() => {
+      useEffect(() => {
         setLoading(true)
         const result = await flipside.query.run(query);
         // Iterate over the results
@@ -247,8 +248,9 @@ export default function Overview() {
             console.log('data is here');
             console.log(record);
             setData(record);
+            setLoading(false);
         });
-      }, [])*/
+      }, [])
 
   return (
     <div className={styles.container}>
@@ -266,12 +268,12 @@ export default function Overview() {
         <div className={styles.grid}>
           <a href="/ethereum" className={styles.card}>
             <h2>Ethereum &rarr;</h2>
-            <p>{data && data.ethereum_total_txs}</p>
+            <p></p>
           </a>
 
           <a href="/polygon" className={styles.card}>
             <h2>Polygon &rarr;</h2>
-            <p>{data && data.polygon_total_txs}</p>
+            <p></p>
           </a>
 
           <a
@@ -279,7 +281,7 @@ export default function Overview() {
             className={styles.card}
           >
             <h2>Algorand &rarr;</h2>
-            <p>{data && data.algorand_total_txs}</p>
+            <p></p>
           </a>
 
           <a
@@ -288,7 +290,7 @@ export default function Overview() {
           >
             <h2>Solana &rarr;</h2>
             <p>
-            {data && data.solana_total_txs}
+            
             </p>
           </a>
         </div>
