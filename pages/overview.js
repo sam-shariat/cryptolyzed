@@ -245,6 +245,7 @@ export default function Overview() {
             setLoading(true)
             const result = await flipside.query.run(query);
             console.log('data is here');
+            console.log(result);
             setData(result);
             setLoading(false)
         };
