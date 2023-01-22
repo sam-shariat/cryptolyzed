@@ -80,7 +80,7 @@ const About = (props) => {
             sx={{ display: { sm: 'none' }, mx:1 }}>
             <MenuIcon />
           </IconButton>
-          <ButtonBase LinkComponent={NavLink} to={"/"} sx={{flexGrow:1,py:2,px:1,width: {xs : 'auto', sm:'auto'}}}>
+          <ButtonBase LinkComponent={NavLink} to={"/cryptolyzed/"} sx={{flexGrow:1,py:2,px:1,width: {xs : 'auto', sm:'auto'}}}>
           <Typography
             variant="h5"
             component="h5"
