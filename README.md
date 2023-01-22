@@ -1,5 +1,7 @@
 ## Cryptolyzed
 
+### [Live Demo](https://sam-shariat.github.io/cryptolyzed/)
+
 Blockchain analytics made using Vite & React for frontend and [Flipsidecrypto shroom sdk](https://flipsidecrypto.xyz/) for real blockchain data
 
 ### Some Screens of the app
