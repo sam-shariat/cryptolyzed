@@ -1,0 +1,31 @@
+{
+  "name": "cryptolyzed",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@flipsidecrypto/sdk": "^1.1.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "latest",
+    "@reactour/tour": "^3.1.2",
+    "bizcharts": "^4.1.20",
+    "chart.js": "^3.9.1",
+    "react": "latest",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "latest",
+    "react-helmet": "^6.1.0",
+    "react-highlight": "^0.14.0",
+    "react-loadable": "^5.5.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest"
+  }
+}
