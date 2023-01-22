@@ -1,5 +1,6 @@
 {
   "name": "cryptolyzed",
+  "homepage": "https://sam-shariat.github.io/cryptolyzed",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +8,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "latest",
