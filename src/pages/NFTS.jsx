@@ -183,7 +183,7 @@ const query = {
     </Grid>
     </Grid>
         {(isLoading === false && data !== null ) && data.map((collection) =>
-        <Button LinkComponent={NavLink} to={'/nft/'+collection.nft_address+'/'+collection.project_name} 
+        <Button LinkComponent={NavLink} to={'nft/'+collection.nft_address+'/'+collection.project_name} 
         variant="outlined" 
         sx={{ mx:{md:0,lg:40}, my:2,p:2,display:'flex',justifyContent:'center'}}>
           <Box sx={{flexGrow:1}}>

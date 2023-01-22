@@ -24,7 +24,7 @@ const Home = () => {
       <Container maxWidth="md">
       <Grid container spacing={2}>
         <Grid item md={6} xs={12}>
-        <NavLink to={'/overview'} className="navlink">
+        <NavLink to={'overview'} className="navlink">
           <Button variant='outlined' sx={{height:120,width:'100%'}} fullWidth>
           <Typography sx={{p: 8,textAlign:'center'}} variant="h4" component="h1" align="center" fullWidth>
             <b>Overview</b>
@@ -33,7 +33,7 @@ const Home = () => {
         </NavLink>
         </Grid>
         <Grid item md={6} xs={12}>
-        <NavLink to={'/charts'} className="navlink">
+        <NavLink to={'charts'} className="navlink">
           <Button variant='outlined' sx={{height:120}} fullWidth>
           <Typography sx={{p: 8,textAlign:'center'}} variant="h4" component="h1" align="center" fullWidth>
             <b>Charts</b>
@@ -43,7 +43,7 @@ const Home = () => {
         </Grid>
         
         <Grid item md={6} xs={12}>
-        <NavLink to={'/nfts'} className="navlink">
+        <NavLink to={'nfts'} className="navlink">
           <Button variant='outlined' sx={{height:120}} fullWidth>
           <Typography sx={{p: 8,textAlign:'center'}} variant="h4" component="h1" align="center" fullWidth>
             <b>NFTs</b>
@@ -52,7 +52,7 @@ const Home = () => {
         </NavLink>
         </Grid>
         <Grid item md={6} xs={12}>
-        <NavLink to={'/about'} className="navlink">
+        <NavLink to={'about'} className="navlink">
           <Button variant='outlined' sx={{height:120}} fullWidth>
           <Typography sx={{p: 8,textAlign:'center'}} variant="h4" component="h1" align="center" fullWidth>
             <b>About</b>

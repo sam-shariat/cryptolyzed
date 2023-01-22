@@ -13,14 +13,14 @@ export default function App() {
     <div style={{height:'100%'}}>
     <Router history={history}>
     <Routes>
-    <Route exact path='/' element={<Home/>} />
-    <Route exact path='/charts' element={<Charts/>} />
-    <Route exact path='/overview' element={<Overview/>} />
-    <Route path="nft" >
+    <Route exact path='cryptolyzed/' element={<Home/>} />
+    <Route exact path='cryptolyzed/charts' element={<Charts/>} />
+    <Route exact path='cryptolyzed/overview' element={<Overview/>} />
+    <Route path="cryptolyzed/nft" >
     <Route path=":id/:name" element={<CryptoPunks />} />
     </Route>
-    <Route exact path='/nfts' element={<NFTS />} />
-    <Route exact path='/about' element={<About />} />
+    <Route exact path='cryptolyzed/nfts' element={<NFTS />} />
+    <Route exact path='cryptolyzed/about' element={<About />} />
     </Routes>
     </Router>
     </div>
