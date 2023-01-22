@@ -9,8 +9,8 @@ export default function Copyright() {
     <Grid item md={12} xs={12}>
      <Typography variant="body2" color="text.secondary" align="center" sx={{p:1}}>
       {'Developed by '}
-      <Link color="inherit" href="https://twitter.com/moslemshariat">
-        @moslemshariat
+      <Link color="inherit" href="https://twitter.com/samywalters">
+        @samywalters
       </Link>{' Using Data from '}
       <Link color="inherit" href="https://flipsidecrypto.xyz/">
         Flipsidecrypto | Shroom SDK

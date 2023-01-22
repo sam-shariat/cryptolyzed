@@ -142,8 +142,8 @@ const Overview = (props) => {
 
 
   const flipside = new Flipside(
-    "d0709327-3a14-45e6-99cc-e1e381800d62",
-    "https://node-api.flipsidecrypto.com"
+    import.meta.env.VITE_FLIPSIDE_APIKEY,
+    import.meta.env.VITE_FLIPSIDE_BASEURL
   );
 
 const query = {

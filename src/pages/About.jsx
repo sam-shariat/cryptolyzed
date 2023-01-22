@@ -159,7 +159,7 @@ const About = (props) => {
       </Grid>
         <Grid item md={6} xs={12}>
         
-          <Button LinkComponent={Link} href="https://twitter.com/moslemshariat" target={'_blank'} variant='outlined' sx={{height:120,width:'100%'}} fullWidth>
+          <Button LinkComponent={Link} href="https://twitter.com/samywalters" target={'_blank'} variant='outlined' sx={{height:120,width:'100%'}} fullWidth>
           <Typography sx={{p: 8,textAlign:'center'}} variant="h4" component="h1" align="center" fullWidth>
             <b>Twitter</b>
           </Typography>
