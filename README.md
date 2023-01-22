@@ -28,10 +28,10 @@ Blockchain analytics made using Vite & React for frontend and [Flipsidecrypto sh
 
 2. Install packages
    ```sh
-   npm install
+   npm install or yarn install
    ```
 3. Run application
    ```sh
-   npm start
+   npm dev or yarn dev
    ```
-4. Open development server on http://localhost:3000
+4. Open development server on http://localhost:3000 or maybe another port!
